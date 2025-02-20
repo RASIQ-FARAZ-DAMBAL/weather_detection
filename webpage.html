@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('parking-background.jpg') no-repeat center center/cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+        header {
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            color: white;
+            padding: 20px;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .menu button {
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+            margin: 15px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #f1c40f, #f39c12);
+            color: #222;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease, transform 0.2s;
+        }
+        .menu button:hover {
+            background: linear-gradient(to right, #f39c12, #e67e22);
+            transform: scale(1.05);
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Easy Parking</h1>
+    </header>
+    
+    <section class="menu">
+        <button onclick="navigate('park.html')">🚗 Park My Vehicle</button>
+        <button onclick="navigate('find_parking.html')">📍 Find Nearest Parking</button>
+        <button onclick="navigate('find_car.html')">🔍 Find My Car</button>
+        <button onclick="navigate('payment.html')">💳 Payment</button>
+        <button onclick="navigate('ai_predictions.html')">🤖 AI-Based Predictions</button>
+    </section>
+    
+    <footer>
+        &copy; 2025 Easy Parking | Your Smart Parking Solution
+    </footer>
+    
+    <script>
+        function navigate(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
